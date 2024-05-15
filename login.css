@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header1 {
+    background-color: rgb(255, 195, 65);
+}
+
+.sessao {
+    padding: 10px;
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.sub-header {
+    background-color: rgb(247, 211, 94);
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.login-section,
+.create-account-section {
+    width: 50%;
+    float: center;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.login-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.login-box h2,
+.create-account-section h2 {
+    text-align: center;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}

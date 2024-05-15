@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+    background-color: rgb(255, 195, 65);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-section {
+    max-width: 800px; 
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search input[type="submit"] {
+    padding: 5px 10px;
+    background-color: rgb(255, 195, 65);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.search input[type="submit"]:hover {
+    background-color: rgb(238, 176, 17);
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.texto{
+    text-align: center;
+}
