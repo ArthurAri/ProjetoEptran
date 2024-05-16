@@ -1,0 +1,202 @@
+.fotoPerfil{
+    background-image: url('fotoPerfil.png'); 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+    background-color: rgb(11, 14, 179);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header1 {
+    background-color: rgb(50, 45, 119);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.content-section {
+    max-width: 800px; 
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search input[type="submit"] {
+    padding: 5px 10px;
+    background-color: rgb(255, 195, 65);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.search input[type="submit"]:hover {
+    background-color: rgb(238, 176, 17);
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+.botaoCabecalho{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.texto{
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+   
+    margin-top: 20px;
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto {
+    margin-top: 0;
+    padding: 20px;
+    font-size: 33px;
+    text-align: justify;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sessao {
+    padding: 10px;
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.pesquisa{
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.barraPesquisa{
+    border-radius: 4px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.sub-header {
+    background-color: rgb(94, 122, 247);
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.login-section,
+.create-account-section {
+    width: 50%;
+    float: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.login-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.login-box h2,
+.create-account-section h2 {
+    text-align: center;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
