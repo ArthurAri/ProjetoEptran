@@ -200,3 +200,8 @@ a {
     display: block;
     margin: auto;
 }
+
+#quizBg{
+    background-image: url('IMG/quiz.jpg');
+}
+
