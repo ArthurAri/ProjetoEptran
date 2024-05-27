@@ -1,8 +1,12 @@
 body {
-    background-image: url('fjkiolo.jpg');
+ 
+    background-image: url('3090612_2079.jpg');
+    background-size: flex;
+    background-size: 1900px 1000px;
+    background-repeat: no-repeat;
 }
 .text{
-    color: rgb(10, 10, 10);
+    color: rgb(255, 254, 254);
     align-items: center;
     height: 100px; 
     margin: auto; 
@@ -12,8 +16,9 @@ body {
     text-align: center; 
     line-height: 100px; 
 }
+
 .retangulo {
-    background-color: orange; 
+    background-color: rgb(119, 126, 230); 
     width: 260px; 
     height: 160px; 
     text-align: center;
@@ -24,7 +29,7 @@ body {
 }
 
 .play-game {
-    color: rgb(12, 12, 12); 
+    color: rgb(250, 250, 250); 
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 24px; 
     position: relative; 
