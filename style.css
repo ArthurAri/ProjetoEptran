@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
 }
 
 .header-section {
@@ -17,9 +18,13 @@ body {
     padding: 20px;
 }
 
-.header1 {
+header {
     background-color: rgb(50, 45, 119);
     color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -78,11 +83,12 @@ form textarea {
 
 .texto{
     text-align: center;
+    min-width: 50%;
 }
 
 .main-content {
     display: flex;
-   
+    
     margin-top: 20px;
 }
 
@@ -106,13 +112,6 @@ a {
 
 .sessao {
     padding: 10px;
-}
-
-header {
-    background-color: rgb(50, 45, 119);
-    color: white;
-    width: 100%;
-    height: 100%;
 }
 
 .menu {
@@ -146,6 +145,7 @@ header {
 }
 .sub-header {
     background-color: rgb(94, 122, 247);
+    color: wi;
     padding: 2px;
     display: flex;
     justify-content: space-around;
