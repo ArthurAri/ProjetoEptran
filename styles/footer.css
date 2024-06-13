@@ -1,0 +1,17 @@
+.enche-espaco{
+    height: 100vh;
+}
+
+.footer__container{
+    height: 40%;
+}
+.footer{
+    /*DELETE-ME*/
+    background-color: var(--branco-escuro);
+    height: 100%;
+}
+.footer__degrade{
+    background: var(--gradiente-footer);
+    height: 50px;
+    width: 100%;
+}

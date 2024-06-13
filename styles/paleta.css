@@ -1,0 +1,16 @@
+:root{
+    --vermelho: #f21d2f;
+    --azul: #023859;
+    --azul-claro: #0e4f77;
+    --azul-extra-claro: #135b88;
+    --amarelo: #f2b807;
+    --amarelo-claro: #f2d06b;
+    --branco: #f2f2f2;
+    --branco-escuro: #e0e0e0;
+
+    --gradiente-azul: linear-gradient(133deg, var(--azul) 63%, var(--azul-extra-claro) 90%);
+
+    --gradiente-amarelo: linear-gradient(133deg, var(--amarelo) 63%, var(--amarelo-claro) 92%);
+
+    --gradiente-footer: linear-gradient(180deg, rgba(0,0,0,0), var(--branco-escuro));
+}

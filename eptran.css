@@ -1,21 +1,5 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.header1 {
-    background-color: rgb(255, 195, 65);
-}
-
 .sessao {
     padding: 10px;
-}
-
-.header {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .menu {
