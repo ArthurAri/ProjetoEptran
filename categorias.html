@@ -4,35 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPTRAN</title>
-    <link rel="stylesheet" href="categoria.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/categorias.css">
 </head>
 <body>
-    <div class="header1">
-        <header class="header">
-            <div class="menu">
-                <p class="botaoCabecalho">EPTRAN</p>
-                <a href="login.html" class="botaoCabecalho">Autenticação</a>
-                <a href="contato.html" class="botaoCabecalho"><p>Contato</p></a>
-                <a href="http://example.com" class="botaoCabecalho"><p>Cursos</p></a>
-                <a href="http://example.com" class="botaoCabecalho"><p>Educação</p></a>
-            </div>
-            <div class="pesquisa">
-                <input type="text" placeholder="Pesquisar...">
-                <ul> 
-                    <a href="#">Usuário</a>
+    <header class="fixador">
+        <div class="header">
+            <div class="menu__container">
+                <input type="checkbox" class="header__menu-hamburger-botao" id="menu-hamburger-botao">
+                <label class="header__menu__rotulo" for="menu-hamburger-botao">
+                    <div class="icone header__icone-menu"></div>
+                </label>
+                <ul class="header__menu-hamburger">
+                    <li class="header__menu-hamburger__item">Autenticação</li>
+                    <li class="header__menu-hamburger__item">Categorias</li>
+                    <li class="header__menu-hamburger__item">Contato</li>
+                    <li class="header__menu-hamburger__item">Cursos</li>
                 </ul>
             </div>
-        </header>
-    </div>
-    <div class="container">
-        <h1>Escolha uma categoria:</h1>
-        <div class="categoria">
-            <button>Educação Infantil</button>
-            <button>Ensino Fundamental</button>
-            <button>Ensino Médio</button>
+            <div class="header__menu">
+                <a href="eptran.html" class="header__logo">
+                    <div class="logo"></div>
+                </a>
+                <div class="header__menu__botoes">
+                    <a href="login.html" class="header__botao">
+                        <h2>Autenticação</h2>
+                    </a>
+                    <a href="categorias.html" class="header__botao header__botao-desta-pagina">
+                        <h2>Categorias</h2>
+                    </a>
+                    <a href="contato.html" class="header__botao">
+                        <h2>Contato</h2>
+                    </a>
+                    <a href="categorias.html" class="header__botao">
+                        <h2>Cursos</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="header__direita">
+                <input type="checkbox" class="header__menu-usuario-botao" id="menu-usuario">
+                <label href="#" class="header__usuario" for="menu-usuario">
+                    <img src="img/icones/perfil_icone.svg" alt="user">
+                </label>
+                <div class="header__menu-usuario">
+                    bom dia
+                    <button class="botao-logout">
+                        Sair da conta
+                        <div class="icone botao-logout__icone"></div>
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <section class="categorias">
+            <h2>Escolha uma categoria</h2>
+            <div class="categorias__botoes">
+                <a class="categorias__botoes__botao"><p>Educação Infantil      </p></a>
+                <a class="categorias__botoes__botao"><p>Ensino Fundamental     </p></a>
+                <a class="categorias__botoes__botao"><p>Ensino Médio           </p></a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
-<!--drssd-->

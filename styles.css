@@ -1,9 +1,14 @@
+@import url('reset.css');
 @import url('styles/header.css');
 @import url('styles/footer.css');
 @import url('styles/paleta.css');
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    padding: 1em;
 }
 
 .logo{
@@ -19,29 +24,4 @@
 p{
     font-size: inherit;
     font-weight: inherit;
-}
-
-.header__menu{
-    display: flex;
-    font-size: .8em;
-}
-
-.header__direita{
-    display: flex;
-    align-items: center;
-}
-
-.header__usuario{
-    height: 100%;
-    aspect-ratio: 1 / 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    gap: 0.3em;
-}
-
-.header__usuario img{
-    height: 50px;
 }

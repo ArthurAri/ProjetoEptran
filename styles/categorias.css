@@ -1,0 +1,51 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url('../IMG/backgrounds/desenho-pagina-principal.svg') no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-position: bottom;
+    object-fit: scale-down;
+    background-color: rgb(216, 238, 255);
+}
+.categorias>h2{
+    text-align: center;
+    font-weight: bold;
+}
+.categorias__botoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: .1em;
+    gap: .2em;
+    padding-top: 1em;
+}
+.categorias__botoes__botao{
+    text-align: center;
+    padding: 1em;
+    background: rgba(255,255,255,.6);
+    border-radius: 5px;
+}
+
+@media screen and (min-width : 516px) {
+    .categorias>h2 {
+        text-align: left;
+    }
+    .categorias__botoes{
+        flex-direction: row;
+        height: 100px;
+        gap: 1%;
+    }
+    .categorias__botoes__botao{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width : 1024px) {
+    body{
+        background-position: right 0 bottom calc(-150px + 10%) ;
+    }
+}

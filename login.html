@@ -4,56 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
-    
-</body>
-</html>
-<header>
-    <div class="menu">
-        <a href="eptran.html" class="botaoCabecalho">           <p>EPTRAN</p></a>
-        <a href="login.html" class="botaoCabecalho">            <p>Autenticação</p></a>
-        <a href="categorias.html" class="botaoCabecalho">       <p>Categorias</p></a>
-        <a href="contato.html" class="botaoCabecalho">          <p>Contato</p></a>
-        <a href="http://example.com" class="botaoCabecalho">    <p>Cursos</p></a>
-        <a href="http://example.com" class="botaoCabecalho">    <p>Educação</p></a>
-        <div class="pesquisa">
-            <input type="text" placeholder="Pesquisar...">
-            <ul> 
-                <a href="#">Usuário</a>
-            </ul>
+    <header class="fixador">
+        <div class="header">
+            <div class="menu__container">
+                <input type="checkbox" class="header__menu-hamburger-botao" id="menu-hamburger-botao">
+                <label class="header__menu__rotulo" for="menu-hamburger-botao">
+                    <div class="icone header__icone-menu"></div>
+                </label>
+                <ul class="header__menu-hamburger">
+                    <li class="header__menu-hamburger__item">Autenticação</li>
+                    <li class="header__menu-hamburger__item">Categorias</li>
+                    <li class="header__menu-hamburger__item">Contato</li>
+                    <li class="header__menu-hamburger__item">Cursos</li>
+                </ul>
+            </div>
+            <div class="header__menu">
+                <a href="eptran.html" class="header__logo">
+                    <div class="logo"></div>
+                </a>
+                <div class="header__menu__botoes">
+                    <a href="login.html" class="header__botao header__botao-desta-pagina">
+                        <h2>Autenticação</h2>
+                    </a>
+                    <a href="categorias.html" class="header__botao">
+                        <h2>Categorias</h2>
+                    </a>
+                    <a href="contato.html" class="header__botao">
+                        <h2>Contato</h2>
+                    </a>
+                    <a href="categorias.html" class="header__botao">
+                        <h2>Cursos</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="header__direita">
+                <input type="checkbox" class="header__menu-usuario-botao" id="menu-usuario">
+                <label href="#" class="header__usuario" for="menu-usuario">
+                    <img src="img/icones/perfil_icone.svg" alt="user">
+                </label>
+                <div class="header__menu-usuario">
+                    bom dia
+                    <button class="botao-logout">
+                        Sair da conta
+                        <div class="icone botao-logout__icone"></div>
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="sub-header">
-        <p>Notícias de Trânsito</p>
-        <p>Rotas</p>
-        <p>Leis de Trânsito</p>
-        <p>Transporte Público</p>
-        <p>Dicas de Condução</p>
-    </div>
-</header>
-<div class="login-section">
-    <div class="login-box">
-        <h2>Login</h2>
-        <div class="input-field">
-            <label for="matricula">Matrícula:</label>
-            <input type="text" id="matricula" placeholder="Digite sua matrícula">
-        </div>
-        <div class="input-field">
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" placeholder="Digite sua senha">
-        </div>
-        <button>Continuar</button>
-    </div>
-</div>
-<div class="create-account-section">
-    <h2>Quero criar uma conta</h2>
-    <div class="input-field">
-        <label for="matricula-create">Matrícula:</label>
-        <input type="text" id="matricula-create" placeholder="Digite sua matrícula">
-    </div>
-    <button>Continuar</button>
-</div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="login-box">
+                <h2>Login</h2>
+                <div class="input-field">
+                    <label for="matricula">Matrícula:</label>
+                    <input type="text" id="matricula" placeholder="Digite sua matrícula">
+                </div>
+                <div class="input-field">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                </div>
+                <button>Continuar</button>
+            </div>
+        </section>
+
+        <section class="create-account-section">
+            <h2>Quero criar uma conta</h2>
+            <div class="input-field">
+                <label for="matricula-create">Matrícula:</label>
+                <input type="text" id="matricula-create" placeholder="Digite sua matrícula">
+            </div>
+            <button>Continuar</button>
+        </section>
+    </main>
 </body>
 </html>
