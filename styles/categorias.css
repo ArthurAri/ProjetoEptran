@@ -8,29 +8,45 @@ body {
     object-fit: scale-down;
     background-color: rgb(216, 238, 255);
 }
+.categorias{
+    margin-top: 2vw;
+}
 .categorias>h2{
     text-align: center;
     font-weight: bold;
+    font-size: 2em;
 }
 .categorias__botoes {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: .1em;
-    gap: .2em;
+    gap: .5em;
     padding-top: 1em;
+}
+.categorias__botoes__botao>h2{
+    font-size: 1.5em;
 }
 .categorias__botoes__botao{
     text-align: center;
     padding: 1em;
     background: rgba(255,255,255,.6);
-    border-radius: 5px;
+    border-radius: 9px;
+}
+
+#infantil{
+    border-bottom: 4px solid red;
+}
+
+#fundamental{
+    border-bottom: 4px solid orange;
+}
+
+#medio{
+    border-bottom: 4px solid rgb(1, 192, 58);
 }
 
 @media screen and (min-width : 516px) {
-    .categorias>h2 {
-        text-align: left;
-    }
     .categorias__botoes{
         flex-direction: row;
         height: 100px;
@@ -46,6 +62,6 @@ body {
 
 @media screen and (min-width : 1024px) {
     body{
-        background-position: right 0 bottom calc(-150px + 10%) ;
+        background-position: right 0 bottom calc(-150px + 20%);
     }
 }

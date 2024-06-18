@@ -8,6 +8,8 @@
     --branco: #f2f2f2;
     --branco-escuro: #e0e0e0;
 
+    --branco-texto: #f2f2f2;
+
     --gradiente-azul: linear-gradient(133deg, var(--azul) 63%, var(--azul-extra-claro) 90%);
 
     --gradiente-amarelo: linear-gradient(133deg, var(--amarelo) 63%, var(--amarelo-claro) 92%);
