@@ -63,6 +63,10 @@ body{
 }
 
 .header__menu-hamburger__item{
+    text-decoration: none;
+    display: block;
+    color: var(--branco-texto);
+    
     padding: 0.2em;
     font-size: 1.5em;
     padding-right: 1em;
