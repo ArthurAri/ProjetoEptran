@@ -1,5 +1,5 @@
 :root{
-    --header-altura: 70px;
+    --header-altura: calc(38px + 2vw);
 }
 
 body{
@@ -64,7 +64,7 @@ body{
 
 .header__menu-hamburger__item{
     padding: 0.2em;
-    font-size: 2em;
+    font-size: 1.5em;
     padding-right: 1em;
     text-transform: uppercase;
 

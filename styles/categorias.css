@@ -2,11 +2,11 @@ body {
     height: 100vh;
     width: 100vw;
     background: url('../img/backgrounds/desenho-pagina-principal.svg') no-repeat;
-    background-size: 100%;
+    background-size: calc(150% - 50vw);
     background-position: bottom;
     background-position: bottom;
     object-fit: scale-down;
-    background-color: rgb(216, 238, 255);
+    background-color: rgb(168, 224, 255);
 }
 .categorias{
     margin-top: 2vw;
@@ -28,6 +28,11 @@ body {
     font-size: 1.5em;
 }
 .categorias__botoes__botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 10vh;
     text-align: center;
     padding: 1em;
     background: rgba(255,255,255,.6);
@@ -47,16 +52,17 @@ body {
 }
 
 @media screen and (min-width : 516px) {
+    .categorias__botoes__botao{
+    }
+}
+    
+@media screen and (min-width : 650px) {
     .categorias__botoes{
         flex-direction: row;
-        height: 100px;
         gap: 1%;
     }
     .categorias__botoes__botao{
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 
