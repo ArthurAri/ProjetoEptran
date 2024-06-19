@@ -5,9 +5,12 @@
     --azul-extra-claro: #135b88;
     --amarelo: #f2b807;
     --amarelo-claro: #f2d06b;
-    --branco: #f2f2f2;
-    --branco-escuro: #e0e0e0;
 
+    --preto-texto: black;
+
+    --branco: #f2f2f2;
+
+    --branco-escuro: #e0e0e0;
     --branco-texto: #f2f2f2;
 
     --gradiente-azul: linear-gradient(133deg, var(--azul) 63%, var(--azul-extra-claro) 90%);

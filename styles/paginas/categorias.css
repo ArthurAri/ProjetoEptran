@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: url('../img/backgrounds/desenho-pagina-principal.svg') no-repeat;
+    background: url('/img/backgrounds/desenho-pagina-principal.svg') no-repeat;
     background-size: calc(150% - 50vw);
     background-position: bottom;
     background-position: bottom;
@@ -28,6 +28,9 @@ body {
     font-size: 1.5em;
 }
 .categorias__botoes__botao{
+    text-decoration: none;
+    color: var(--preto-texto);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,14 +53,14 @@ body {
 #medio:not(:active){
     border-bottom: 4px solid rgb(1, 192, 58);
 }
+
 .categorias__botoes__botao:active{
     border: none;
     border-top: 4px solid rgb(183, 183, 183);
 }
 
 @media screen and (min-width : 516px) {
-    .categorias__botoes__botao{
-    }
+
 }
     
 @media screen and (min-width : 650px) {

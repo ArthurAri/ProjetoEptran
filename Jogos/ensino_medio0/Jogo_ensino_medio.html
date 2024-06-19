@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/paginas/login.css">
+    <title>Jogo de Palavras</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="ensino_medio_jogo.css">
+    <link rel="stylesheet" href="/styles/header.css">
 </head>
 <body>
     <header class="fixador">
@@ -16,10 +17,10 @@
                     <div class="icone header__icone-menu"></div>
                 </label>
                 <ul class="header__menu-hamburger">
-                    <a href="login.html" class="header__menu-hamburger__item">Autenticação</a>
-                    <a href="categorias.html" class="header__menu-hamburger__item">Categorias</a>
-                    <a href="contato.html" class="header__menu-hamburger__item">Contato</a>
-                    <a href="categorias.html" class="header__menu-hamburger__item">Cursos</a>
+                    <a href="/login.html" class="header__menu-hamburger__item">Autenticação</a>
+                    <a href="/categorias.html" class="header__menu-hamburger__item">Categorias</a>
+                    <a href="/contato.html" class="header__menu-hamburger__item">Contato</a>
+                    <a href="/categorias.html" class="header__menu-hamburger__item">Cursos</a>
                 </ul>
             </div>
             <div class="header__menu">
@@ -44,7 +45,7 @@
             <div class="header__direita">
                 <input type="checkbox" class="header__menu-usuario-botao" id="menu-usuario">
                 <label href="#" class="header__usuario" for="menu-usuario">
-                    <img src="img/icones/perfil_icone.svg" alt="user">
+                    <img src="/img/icones/perfil_icone.svg" alt="user">
                 </label>
                 <div class="header__menu-usuario">
                     bom dia
@@ -56,31 +57,35 @@
             </div>
         </div>
     </header>
-
-    <main>
-        <section class="entrar">
-            <div class="login caixa">
-                <h2>Login</h2>
-                <div class="campo">
-                    <label class="nome-campo" for="matricula">Matrícula:</label>
-                    <input class="campo__input" type="text" id="matricula" placeholder="Digite sua matrícula">
-                </div>
-                <div class="campo">
-                    <label for="senha">Senha:</label>
-                    <input class="campo__input" type="password" id="senha" placeholder="Digite sua senha">
-                </div>
-                <button>Continuar</button>
-            </div>
-
-            <div class="cadastro caixa">
-                <h2>Quero criar uma conta</h2>
-                <div class="campo">
-                    <label for="matricula-create">Matrícula:</label>
-                    <input class="campo__input" type="text" id="matricula-create" placeholder="Digite sua matrícula">
-                </div>
-                <button>Continuar</button>
-            </div>
-        </section>
+    <main class="corpo">
+        
+        <h1 class="titulo">Ensino Medio</h1>
+        <h2 class="nome-do-jogo">Jogo de Palavras</h2>
+        <p>Forme 4 grupos de 4 palavras que tenham algo em comum.</p>
+        <div id="words-container">
+            <div class="word">AVENIDA</div>
+            <div class="word">VELOCIDADE MÁXIMA</div>
+            <div class="word">RODOVIA</div>
+            <div class="word">USO DO CELULAR</div>
+            <div class="word">ESPELHO RETROVISOR</div>
+            <div class="word">ESTACIONAR EM LOCAL PROIBIDO</div>
+            <div class="word">VOLANTE</div>
+            <div class="word">CUIDADO ESCOLAS</div>
+            <div class="word">FAROL</div>
+            <div class="word">RUA</div>
+            <div class="word">PROIBIDO ESTACIONAR</div>
+            <div class="word">ESTRADA</div>
+            <div class="word">PARE</div>
+            <div class="word">AVANÇAR NO SINAL VERMELHO</div>
+            <div class="word">EXCESSO DE VELOCIDADE</div>
+            <div class="word">PNEU</div>
+        </div>
+        <div id="result"></div>
+        <div id="action-buttons">
+            <button id="check-button">Verificar</button>
+        </div>
+        <div id="groups-container"></div>
+        <script src="jogo_ensino_medio.js"></script>
     </main>
 </body>
 </html>
