@@ -39,16 +39,20 @@ body {
     border-radius: 9px;
 }
 
-#infantil{
+#infantil:not(:active){
     border-bottom: 4px solid red;
 }
 
-#fundamental{
+#fundamental:not(:active){
     border-bottom: 4px solid orange;
 }
 
-#medio{
+#medio:not(:active){
     border-bottom: 4px solid rgb(1, 192, 58);
+}
+.categorias__botoes__botao:active{
+    border: none;
+    border-top: 4px solid rgb(183, 183, 183);
 }
 
 @media screen and (min-width : 516px) {
