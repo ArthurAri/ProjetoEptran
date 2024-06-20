@@ -1,0 +1,20 @@
+#cartas-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.carta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.carta>p{
+    font-size: 2em;
+    text-align: center;
+}
