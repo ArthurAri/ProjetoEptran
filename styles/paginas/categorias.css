@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: url('/img/backgrounds/desenho-pagina-principal.svg') no-repeat;
+    background: url('img/backgrounds/desenho-pagina-principal.svg') no-repeat;
     background-size: calc(150% - 50vw);
     background-position: bottom;
     background-position: bottom;
