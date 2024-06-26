@@ -16,6 +16,8 @@ const cartas = {
 var cartas_visuais = new Array();
 var cartas_descritivas = new Array();
 
+var amostragem_de_cartas = new Array();
+
 Object.keys(cartas).forEach(key => {
     //Para as cartas com Imagems
     var div = document.createElement("div");
@@ -33,6 +35,9 @@ Object.keys(cartas).forEach(key => {
     div.classList, div2.classList += key.replace(/\s+/g, '-').toLowerCase();
     div2.appendChild(p);
     
+    div.addEventListener('click', (event) => girarCarta(event));
+    div2.addEventListener('click', (event) => girarCarta(event));
+    
     cartas_visuais.push(div);
     cartas_descritivas.push(div2);
 
@@ -46,3 +51,27 @@ cartas_visuais.forEach(element => {
 cartas_descritivas.forEach(element => {
     cartas_container.append(element);
 });
+
+function girarCarta(event){
+    var carta_exibida = !(event.target.children[0].style.display == 'none');
+    console.log(carta_exibida);
+
+    if (carta_exibida)
+        ocultarCarta(event);
+    else
+        mostrarCarta(event);
+}
+
+function ocultarCarta(event){
+    event.target.classList.remove('carta-cima');
+    event.target.classList.add('carta-baixo');
+
+    event.target.children[0].style.display = 'none';
+}
+
+function mostrarCarta(event){
+    event.target.classList.remove('carta-baixo');
+    event.target.classList.add('carta-cima');
+
+    event.target.children[0].style.display = 'block';
+}

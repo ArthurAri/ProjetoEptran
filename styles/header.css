@@ -42,7 +42,7 @@ body{
 }
 
 .header__icone-menu{
-    background-image: url('img/icones/menu_icone.svg');
+    background-image: url('../img/icones/menu_icone.svg');
 }
 
 .header__menu-hamburger{
@@ -206,7 +206,7 @@ body{
 }
 
 .botao-logout__icone{
-    background-image: url('img/icones/logout_icone.svg');
+    background-image: url('../img/icones/logout_icone.svg');
 }
 
 @media screen and (max-width: 352px) {
