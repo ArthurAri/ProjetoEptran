@@ -44,12 +44,12 @@
 
 @keyframes girar-carta-cima {
     to {
-        transform: perspective(300px) rotateY(180deg) scaleX(-1);
+        transform: rotateY(180deg) scaleX(-1);
     }
 }
 @keyframes girar-carta-baixo {
     to {
-        transform: perspective(300px) rotateY(180deg) scaleX(-1);
+        transform: rotateY(180deg) scaleX(-1);
     }
 }
 @keyframes carta-ocultar-conteudo {
