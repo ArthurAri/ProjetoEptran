@@ -3,8 +3,7 @@ body {
     width: 100vw;
     background: url('../../img/backgrounds/desenho-pagina-principal.svg') no-repeat;
     background-size: calc(150% - 50vw);
-    background-position: bottom;
-    background-position: bottom;
+    background-position: center bottom calc(min(45vh - 35vw, 0px));
     object-fit: scale-down;
     background-color: rgb(168, 224, 255);
 }
@@ -38,7 +37,7 @@ body {
     height: 10vh;
     text-align: center;
     padding: 1em;
-    background: rgba(255,255,255,.6);
+    background: rgba(255,255,255,.8);
     border-radius: 9px;
 }
 
@@ -74,7 +73,5 @@ body {
 }
 
 @media screen and (min-width : 1024px) {
-    body{
-        background-position: right 0 bottom calc(-150px + 20%);
-    }
+
 }
