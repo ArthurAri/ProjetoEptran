@@ -1,29 +1,44 @@
+:root{
+    --carta-cor: #8080801f;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
 #cartas-container{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1rem;
+    height: 40vh;
 }
 
 .carta{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    padding: 1rem;
+    width: 15%;
+    aspect-ratio: 1 / 1;
     border-radius: 1rem;
+    background-color: var(--carta-cor);
+    box-shadow: 0px 2px 5px;
 }
 
 .carta img{
+    height: 100%;
     pointer-events: none;
 }
 
 .carta p{
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
     font-stretch: expanded;
 
     pointer-events: none;
+    object-fit: contain;
 }
 
 .carta-baixo{
@@ -40,6 +55,12 @@
 
 .carta-cima > *{
     animation: 1s carta-mostrar-conteudo;
+}
+
+@media (min-width: 560px) {
+    .carta{
+        width: 10%;
+    }
 }
 
 @keyframes girar-carta-cima {

@@ -142,8 +142,7 @@ body{
 }
 
 /*Ocultar menus*/
-
-.menu__container, .header__menu-usuario,
+.header__menu__botoes, .header__menu-usuario,
 .header__menu-hamburger-botao, .header__menu-usuario-botao {
     display: none;
 }
@@ -218,12 +217,12 @@ body{
     }
 }
 
-@media only screen and (max-width: 852px) {
+@media only screen and (min-width: 852px) {
     .menu__container{
-        display: block;
-    }
-    .header__botao{
         display: none;
+    }
+    .header__menu__botoes{
+        display: flex;
     }
 }
 /* Animations */

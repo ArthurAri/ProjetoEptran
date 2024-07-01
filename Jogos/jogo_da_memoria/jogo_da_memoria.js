@@ -15,6 +15,7 @@ const cartas_arquivos = {
 
 var cartas_objetos = new Array();
 var pontos = 0;
+var iniciado = false;
 
 Object.keys(cartas_arquivos).forEach(key => {
     //Para as cartas com Imagems
@@ -56,6 +57,7 @@ Array.prototype.shuffle = function() {
 
 document.getElementById("reiniciar").addEventListener('click', () => embaralhar());
 function embaralhar() {
+    iniciado = false;
     cartas_objetos.shuffle();
     
     cartas_objetos.forEach(element => {
@@ -76,13 +78,14 @@ embaralhar();
 
 function iniciar() {
     console.log("Iniciar");
+    iniciado = true;
     cartas_objetos.forEach(element => ocultarCarta(element));
 }
 
 document.getElementById("iniciar").addEventListener('click', () => iniciar());
 
 function girarCarta(element){
-    if (selecionado.length > 1)
+    if (selecionado.length > 1 || !iniciado)
         return;
 
     qtd_selecionado++;
