@@ -123,6 +123,9 @@ body{
     justify-content: center;
     
     gap: 0.3em;
+
+    background: url("../img/icones/perfil_icone.svg") no-repeat center;
+    background-size: 80%;
 }
 
 .header__usuario img{
