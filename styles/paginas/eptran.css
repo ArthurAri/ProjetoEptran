@@ -1,0 +1,13 @@
+.background-principal{
+    background: url("/img/imagem.jpg") no-repeat;
+    width: calc(100% - 4em);
+    object-fit: contain;
+    padding: 3em 3em 7em;
+    background-size: 100%;
+    background-position: left;
+}
+
+.texto-bem-vindo{
+    color: var(--branco-texto);
+    font-weight: 700;
+}

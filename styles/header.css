@@ -3,22 +3,20 @@
 }
 
 body{
+    height: 100vh;
     overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 200px auto;
 }
 
 .fixador{
-    display: block;
+    display: flex;
     position: sticky;
-    width: 100%;
 }
 
 .header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: var(--gradiente-azul);
+    background: var(--azul);
     color: var(--branco);
-    height: var(--header-altura);
 
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -76,23 +74,26 @@ body{
 }
 
 .header__menu{
+    height: 100%;
     display: flex;
-    font-size: .8em;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1em;
 }
 
 .header__menu__botoes{
-    display: flex;
+    height: 55%;
 }
 
 .header__botao{
-    width: 100%;
-    padding: 0 1em 0 1em;
+    padding-left: 1rem;
+    display: block;
+    height: 40px;
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: inherit;
     text-decoration: none;
     background-color: inherit;
-    text-align: center;
     align-content: center;
 }
 
@@ -115,7 +116,7 @@ body{
 }
 
 .header__usuario{
-    height: 100%;
+    width: 100%;
     aspect-ratio: 1 / 1;
 
     display: flex;
@@ -142,9 +143,23 @@ body{
 }
 
 /*Ocultar menus*/
-.header__menu__botoes, .header__menu-usuario,
+/* .header__menu__botoes, .header__menu-usuario,
 .header__menu-hamburger-botao, .header__menu-usuario-botao {
     display: none;
+} */
+
+.menu__container{
+    display: none;
+}
+
+.botao-logout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botao-logout__icone{
+    height: 100%;
+    background-image: url("../img/icones/logout_icone.svg");
 }
 
 /*Exibir menus*/
@@ -167,80 +182,10 @@ body{
 .header__menu-hamburger-botao:checked ~ .header__menu__rotulo{
     background-color: var(--azul-extra-claro);
 }
-
-
-/* Painel do usuario*/
-
-.header__menu-usuario{
-    position: absolute;
-    background: var(--azul-claro);
-
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding: 1em;
-
-    top: 0%;
-    right: 0%;
-    width: 30%;
-    min-width: calc(300px + 1em);
-    height: calc(100vh - var(--header-altura) - 2em);
-
-    top: 100%;
-    z-index: -1;
-
-    animation-name: anim-hide-to-right;
-    animation-duration: 0.5s;
-}
-
-.botao-logout{
-    background-color: transparent;
-    color:var(--branco);
-    border: 1px solid white;
-    height: 3em;
-    padding: .1em;
-    gap: .5em;
-
-    font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.botao-logout__icone{
-    background-image: url('../img/icones/logout_icone.svg');
-}
-
-@media screen and (max-width: 352px) {
-    .logo{
-        display: none;
+/* 
+@media (min-height : 450px) {
+    .botao-logout{
+        
     }
-}
-
-@media only screen and (min-width: 852px) {
-    .menu__container{
-        display: none;
-    }
-    .header__menu__botoes{
-        display: flex;
-    }
-}
-/* Animations */
-@keyframes anim-go-dowm {
-    from { top: -200%;}
-    to { top: 100%;}
-}
-@keyframes anim-hide-to-up {
-    from { top: 100%; display: block;}
-    to { top: -200%;}
-}
-
-/* Animations */
-@keyframes anim-go-left {
-    from { right: -100%;}
-    to { right: 0%;}
-}
-@keyframes anim-hide-to-right {
-    from { right: 0%; display: flex;}
-    to { right: -100%;}
-}
+    
+} */

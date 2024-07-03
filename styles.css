@@ -7,13 +7,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
 .corpo{
     padding: 2em;
 }
 
+main {
+    overflow-y: scroll;
+}
+
 .logo{
     object-fit: cover;
-    height: 100%;
+    width: 100%;
     aspect-ratio: 3 / 1;
     background-size: 85%;
     background-image: url('img/logos/eptran_logo.svg');

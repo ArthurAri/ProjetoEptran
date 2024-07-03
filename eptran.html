@@ -5,68 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPTRAN</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="eptran.css">
+    <link rel="stylesheet" href="styles/paginas/eptran.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="fixador">
-        <div class="header">
-            <div class="menu__container">
-                <input type="checkbox" class="header__menu-hamburger-botao" id="menu-hamburger-botao">
-                <label class="header__menu__rotulo" for="menu-hamburger-botao">
-                    <div class="icone header__icone-menu"></div>
-                </label>
-                <ul class="header__menu-hamburger">
-                    <a href="login.html" class="header__menu-hamburger__item">Autenticação</a>
-                    <a href="categorias.html" class="header__menu-hamburger__item">Categorias</a>
-                    <a href="contato.html" class="header__menu-hamburger__item">Contato</a>
-                    <a href="categorias.html" class="header__menu-hamburger__item">Cursos</a>
-                </ul>
-            </div>
-            <div class="header__menu">
-                <a href="eptran.html" class="header__logo">
-                    <div class="logo"></div>
+    <header class="header">
+        <div class="menu__container">
+            <input type="checkbox" class="header__menu-hamburger-botao" id="menu-hamburger-botao">
+            <label class="header__menu__rotulo" for="menu-hamburger-botao">
+                <div class="icone header__icone-menu"></div>
+            </label>
+            <ul class="header__menu-hamburger">
+                <a href="login.html" class="header__menu-hamburger__item">Autenticação</a>
+                <a href="categorias.html" class="header__menu-hamburger__item">Categorias</a>
+                <a href="contato.html" class="header__menu-hamburger__item">Contato</a>
+                <a href="categorias.html" class="header__menu-hamburger__item">Cursos</a>
+            </ul>
+        </div>
+        <div class="header__menu">
+            <a href="eptran.html" class="header__logo">
+                <div class="logo"></div>
+            </a>
+            <div class="header__menu__botoes">
+                <a href="categorias.html" class="header__botao">
+                    <h2>Jogos</h2>
                 </a>
-                <div class="header__menu__botoes">
-                    <a href="login.html" class="header__botao">
-                        <h2>Autenticação</h2>
-                    </a>
-                    <a href="categorias.html" class="header__botao">
-                        <h2>Categorias</h2>
-                    </a>
-                    <a href="contato.html" class="header__botao">
-                        <h2>Contato</h2>
-                    </a>
-                    <a href="categorias.html" class="header__botao">
-                        <h2>Cursos</h2>
-                    </a>
-                </div>
+                <a href="login.html" class="header__botao">
+                    <h2>Perfil</h2>
+                </a>
+                <a href="categorias.html" class="header__botao">
+                    <h2>Cursos</h2>
+                </a>
             </div>
-            <div class="header__direita">
-                <input type="checkbox" class="header__menu-usuario-botao" id="menu-usuario">
-                <label href="#" class="header__usuario" for="menu-usuario">
-                </label>
-                <div class="header__menu-usuario">
-                    bom dia
-                    <button class="botao-logout">
-                        Sair da conta
-                        <div class="icone botao-logout__icone"></div>
-                    </button>
-                </div>
-            </div>
+            <button class="botao-logout header__botao">
+                <p>Sair da conta</p>
+                <div class="icone botao-logout__icone"></div>
+            </button>
         </div>
     </header>
-    
-    <div class="sessao">
-        <div class="main-content">
-            <div class="imagem">
-                <img src="img/imagem.jpg" alt="Imagem">
-            </div>
-            <div class="texto">
-                <p>A Escola Pública de Trânsito, ligada ao Departamento de Trânsito e a Prefeitura Municipal de Joinville, faz toda a parte educacional obrigatória pelo Código de Trânsito Brasileiro. Atendemos desde as séries iniciais (Fundamental I e II) com atividades lúdicas, até o Ensino Médio e Empresas, com palestras para adultos. </p>
-            </div>
+    <main>
+        <div class="background-principal">
+            <h1 class="texto-bem-vindo">Bem vindo ao EPTRAN</h1>
         </div>
-    </div>
-    <script src="integrate.js"></script>
+        <div class="corpo"></div>
+    </main>
 </body>
 </html>
