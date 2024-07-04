@@ -6,7 +6,7 @@ body{
     height: 100vh;
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns:230px auto;
 }
 
 .fixador{
@@ -30,6 +30,8 @@ body{
     
     height: 100%;
     aspect-ratio: 1 / 1;
+
+    font-size: 10rem;
 }
 
 .header__menu__rotulo{
@@ -82,19 +84,19 @@ body{
 }
 
 .header__menu__botoes{
-    height: 55%;
+    margin-top: 20px;
 }
 
 .header__botao{
     padding-left: 1rem;
-    display: block;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    height: 60px;
     font-weight: 100;
     font-size: 1.2em;
     color: inherit;
     text-decoration: none;
     background-color: inherit;
-    align-content: center;
 }
 
 .header__botao-desta-pagina{
@@ -153,12 +155,11 @@ body{
 }
 
 .botao-logout{
+    border: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .botao-logout__icone{
-    height: 100%;
     background-image: url("../img/icones/logout_icone.svg");
 }
 

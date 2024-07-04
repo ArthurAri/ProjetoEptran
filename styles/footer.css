@@ -1,15 +1,29 @@
-.enche-espaco{
-    height: 100vh;
+:root{
+    --footer-altura: 60px;
 }
 
 .footer__container{
-    height: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.contato{
+}
+
 .footer{
-    /*DELETE-ME*/
-    background-color: var(--branco-escuro);
-    height: 100%;
+    height: var(--footer-altura);
+    padding: .5rem 2rem;
+    background-color: var(--azul-claro);
+    color: var(--branco-texto);
 }
+
+.logos{
+    height: 100%;
+    object-fit: cover;
+}
+
 .footer__degrade{
     background: var(--gradiente-footer);
     height: 50px;

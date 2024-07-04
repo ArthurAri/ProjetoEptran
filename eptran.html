@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPTRAN</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles/paginas/eptran.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/paginas/eptran.css">
 </head>
 <body>
     <header class="header">
@@ -23,31 +22,60 @@
             </ul>
         </div>
         <div class="header__menu">
-            <a href="eptran.html" class="header__logo">
-                <div class="logo"></div>
-            </a>
-            <div class="header__menu__botoes">
-                <a href="categorias.html" class="header__botao">
-                    <h2>Jogos</h2>
+            <div>
+                <a href="eptran.html" class="header__logo">
+                    <div class="logo"></div>
                 </a>
-                <a href="login.html" class="header__botao">
-                    <h2>Perfil</h2>
-                </a>
-                <a href="categorias.html" class="header__botao">
-                    <h2>Cursos</h2>
-                </a>
+                <div class="header__menu__botoes">
+                    <a href="categorias.html" class="header__botao">
+                        <!-- <div class="icone botao-logout__icone"></div> -->
+                        <h2>Jogos</h2>
+                    </a>
+                    <a href="login.html" class="header__botao">
+                        <!-- <div class="icone botao-logout__icone"></div> -->
+                        <h2>Perfil</h2>
+                    </a>
+                    <a href="categorias.html" class="header__botao">
+                        <!-- <div class="icone botao-logout__icone"></div> -->
+                        <h2>Cursos</h2>
+                    </a>
+                </div>
             </div>
             <button class="botao-logout header__botao">
-                <p>Sair da conta</p>
                 <div class="icone botao-logout__icone"></div>
+                <p>Sair da conta</p>
             </button>
         </div>
     </header>
     <main>
-        <div class="background-principal">
-            <h1 class="texto-bem-vindo">Bem vindo ao EPTRAN</h1>
+        <div class="painel-bem-vindo">
+            
+            <h1 class="texto-bem-vindo">EPTRAN</h1>
+            <h2>Escola pública de trânsito</h2>
         </div>
-        <div class="corpo"></div>
+
+        <div class="corpo">
+            <h2>Projetos</h2>
+            <div class="projetos">
+                <div class="projetos-card">
+                    <p>Escola Pública de Trânsito de Joinville recebe prêmio nacional e apresenta resultados das ações em evento.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="">
+                </div>
+                <div class="projetos-card">
+                    <p>Ações do Departamento de Trânsito de Joinville alertam sobre os perigos de beber e dirigir.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="contato">
+                    <p>eptran@gmail.com</p>
+                    <p>Telefone: (49) 99999-9999</p>
+                </div>
+                <img class="logos" src="img/logos/Logos.png" alt="Logos do eptran">
+            </div>
+        </footer>
     </main>
 </body>
 </html>

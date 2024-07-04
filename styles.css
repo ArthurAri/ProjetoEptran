@@ -12,10 +12,11 @@ body{
 }
 
 .corpo{
-    padding: 2em;
+    padding: 2em 4rem;
 }
 
 main {
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 
