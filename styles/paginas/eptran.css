@@ -1,9 +1,10 @@
 .painel-bem-vindo{
     position: relative;
     background: url("../../img/imagem.jpg") no-repeat;
-    width: calc(100% - 4em);
+    width: calc(100%);
+    aspect-ratio: 4 / 1;
+    padding: 6vh 4vw;
     object-fit: cover;
-    padding: 4vh 4em 40vh;
     background-size: 100%;
     background-position: left 0 center;
     color: var(--branco-texto);
@@ -44,8 +45,9 @@
 }
 
 .projetos{
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -60,4 +62,8 @@
 .projetos-card img{
     object-fit: cover;
     width: 100%;
+}
+
+@media (min-width: 1100px) {
+
 }

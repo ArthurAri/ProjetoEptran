@@ -1,6 +1,8 @@
 body {
     height: 100vh;
     width: 100vw;
+}
+main{
     background: url('../../img/backgrounds/desenho-pagina-principal.svg') no-repeat;
     background-size: calc(150% - 50vw);
     background-position: center bottom calc(min(45vh - 35vw, 0px));
@@ -57,12 +59,8 @@ body {
     border: none;
     border-top: 4px solid rgb(183, 183, 183);
 }
-
-@media screen and (min-width : 516px) {
-
-}
     
-@media screen and (min-width : 650px) {
+@media screen and (min-width : 700px) {
     .categorias__botoes{
         flex-direction: row;
         gap: 1%;
@@ -72,6 +70,10 @@ body {
     }
 }
 
-@media screen and (min-width : 1024px) {
 
+@media screen and (min-width : 900px) {
+    main{
+        background-size: calc(115% - 10vw);
+        background-position: center bottom calc(min(45vh - 30vw, 0px));
+    }
 }

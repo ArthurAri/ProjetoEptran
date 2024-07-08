@@ -8,51 +8,57 @@
     <link rel="stylesheet" href="styles/paginas/categorias.css">
 </head>
 <body>
-    <header class="fixador">
-        <div class="header">
-            <div class="menu__container">
-                <input type="checkbox" class="header__menu-hamburger-botao" id="menu-hamburger-botao">
-                <label class="header__menu__rotulo" for="menu-hamburger-botao">
-                    <div class="icone header__icone-menu"></div>
-                </label>
-                <ul class="header__menu-hamburger">
-                    <a href="login.html" class="header__menu-hamburger__item">Autenticação</a>
-                    <a href="categorias.html" class="header__menu-hamburger__item">Categorias</a>
-                    <a href="contato.html" class="header__menu-hamburger__item">Contato</a>
-                    <a href="categorias.html" class="header__menu-hamburger__item">Cursos</a>
-                </ul>
+    <header class="header">
+        <div class="menu__container">
+            <input type="checkbox" class="header__menu-hamburger-botao" id="menu-hamburger-botao">
+            <label class="header__menu__rotulo" for="menu-hamburger-botao">
+                <div class="icone header__icone-menu"></div>
+            </label>
+            <div class="header__menu-hamburger">
+                <a href="login.html" class="header__menu-hamburger__item">Autenticação</a>
+                <a href="categorias.html" class="header__menu-hamburger__item">Categorias</a>
+                <a href="contato.html" class="header__menu-hamburger__item">Contato</a>
+                <a href="categorias.html" class="header__menu-hamburger__item">Cursos</a>
             </div>
-            <div class="header__menu">
-                <a href="eptran.html" class="header__logo">
-                    <div class="logo"></div>
-                </a>
+        </div>
+        <a href="eptran.html" class="header__logo">
+            <div class="logo"></div>
+        </a>
+        <div class="header__menu">
+            <div>
                 <div class="header__menu__botoes">
+                    <a href="categorias.html" class="header__botao">
+                        <!-- <div class="icone botao-logout__icone"></div> -->
+                        <h2>Jogos</h2>
+                    </a>
                     <a href="login.html" class="header__botao">
-                        <h2>Autenticação</h2>
-                    </a>
-                    <a href="categorias.html" class="header__botao header__botao-desta-pagina">
-                        <h2>Categorias</h2>
-                    </a>
-                    <a href="contato.html" class="header__botao">
-                        <h2>Contato</h2>
+                        <!-- <div class="icone botao-logout__icone"></div> -->
+                        <h2>Perfil</h2>
                     </a>
                     <a href="categorias.html" class="header__botao">
+                        <!-- <div class="icone botao-logout__icone"></div> -->
                         <h2>Cursos</h2>
                     </a>
                 </div>
             </div>
-            <div class="header__direita">
-                <input type="checkbox" class="header__menu-usuario-botao" id="menu-usuario">
-                <label href="#" class="header__usuario" for="menu-usuario">
-                </label>
-                <div class="header__menu-usuario">
-                    bom dia
-                    <button class="botao-logout">
-                        Sair da conta
-                        <div class="icone botao-logout__icone"></div>
-                    </button>
-                </div>
+        </div>
+        <div class="header__usuario">
+            <input type="checkbox" class="header__menu-usuario-botao" id="menu-usuario">
+            <label href="#" class="header__usuario" for="menu-usuario">
+            </label>
+            <div class="header__menu-usuario">
+                bom dia
+                <button class="botao-logout">
+                    Sair da conta
+                    <div class="icone botao-logout__icone"></div>
+                </button>
             </div>
+        </div>
+        <div class="secao-conta">
+            <button class="botao-logout header__botao">
+                <div class="icone botao-logout__icone"></div>
+                <p>Sair da conta</p>
+            </button>
         </div>
     </header>
     <main class="corpo">

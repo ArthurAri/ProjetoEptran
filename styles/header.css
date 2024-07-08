@@ -3,10 +3,10 @@
 }
 
 body{
+    display: grid;
+    grid-template-rows: var(--header-altura) auto;
     height: 100vh;
     overflow-x: hidden;
-    display: grid;
-    grid-template-columns:230px auto;
 }
 
 .fixador{
@@ -15,6 +15,8 @@ body{
 }
 
 .header{
+    display: flex;
+    justify-content: space-between;
     background: var(--azul);
     color: var(--branco);
 
@@ -38,16 +40,14 @@ body{
     display: block;
 
     aspect-ratio: 1 / 1;
-    height: 100%;
+    height: var(--header-altura);
 }
 
 .header__icone-menu{
     background-image: url('../img/icones/menu_icone.svg');
 }
 
-.header__menu-hamburger{
-    display: none;
-    
+.header__menu-hamburger{    
     position: absolute;
     color: white;
     background-color: var(--azul-claro);
@@ -75,13 +75,16 @@ body{
     border-radius: 8px;
 }
 
-.header__menu{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 1em;
+.logo{
+    object-fit: cover;
+    height: var(--header-altura);
+    aspect-ratio: 3 / 1;
+    background-size: 85%;
+    background-image: url('../img/logos/eptran_logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 .header__menu__botoes{
     margin-top: 20px;
@@ -112,13 +115,7 @@ body{
     left: 0;
 }
 
-.header__direita{
-    display: flex;
-    align-items: center;
-}
-
 .header__usuario{
-    width: 100%;
     aspect-ratio: 1 / 1;
 
     display: flex;
@@ -145,12 +142,10 @@ body{
 }
 
 /*Ocultar menus*/
-/* .header__menu__botoes, .header__menu-usuario,
-.header__menu-hamburger-botao, .header__menu-usuario-botao {
-    display: none;
-} */
-
-.menu__container{
+.header__menu,
+.header__menu__botoes, .header__menu-usuario,.secao-conta,
+.header__menu-hamburger-botao, .header__menu-usuario-botao,
+.header__direita {
     display: none;
 }
 
@@ -159,6 +154,7 @@ body{
     display: flex;
     align-items: center;
 }
+
 .botao-logout__icone{
     background-image: url("../img/icones/logout_icone.svg");
 }
@@ -179,14 +175,41 @@ body{
 }
 
 /*Reaçar botões quando ativos*/
-
 .header__menu-hamburger-botao:checked ~ .header__menu__rotulo{
     background-color: var(--azul-extra-claro);
 }
-/* 
-@media (min-height : 450px) {
+
+@media (min-width : 900px) {
+
+    .header__usuario, .logo{
+        width: 100%;
+    }
+    .menu__container, .header__usuario{
+        display: none;
+    }
+    .header__menu{
+        display: block;
+    }
+    body{
+        grid-template-rows: auto;
+        grid-template-columns:230px auto;
+    }
+    .logo{
+        height: auto;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header__menu{
+        flex-direction: column;
+        height: 60%;
+        justify-content: space-between;
+        font-size: 1em;
+    }
     .botao-logout{
         
     }
-    
-} */
+    .secao-conta, .header__menu__botoes{
+        display: block;
+    }
+}

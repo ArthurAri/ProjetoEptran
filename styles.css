@@ -20,16 +20,6 @@ main {
     overflow-y: scroll;
 }
 
-.logo{
-    object-fit: cover;
-    width: 100%;
-    aspect-ratio: 3 / 1;
-    background-size: 85%;
-    background-image: url('img/logos/eptran_logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 p{
     font-size: inherit;
     font-weight: inherit;
