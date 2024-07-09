@@ -13,8 +13,9 @@ body{
     display: flex;
     position: sticky;
 }
-
+    
 .header{
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     background: var(--azul);
@@ -47,16 +48,16 @@ body{
     background-image: url('../img/icones/menu_icone.svg');
 }
 
-.header__menu-hamburger{    
+.header__menu-hamburger{
     position: absolute;
+
+    z-index: -1;
+
     color: white;
     background-color: var(--azul-claro);
     font-size: 1em;
     width: 60%;
     min-width: max-content;
-    
-    top: 100%;
-    z-index: -1;
     
     animation-name: anim-hide-to-up;
     animation-duration: 0.5s;
@@ -71,8 +72,6 @@ body{
     font-size: 1.5em;
     padding-right: 1em;
     text-transform: uppercase;
-
-    border-radius: 8px;
 }
 
 .logo{
@@ -84,7 +83,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 .header__menu__botoes{
     margin-top: 20px;
@@ -144,7 +142,8 @@ body{
 /*Ocultar menus*/
 .header__menu,
 .header__menu__botoes, .header__menu-usuario,.secao-conta,
-.header__menu-hamburger-botao, .header__menu-usuario-botao,
+.header__menu-hamburger, .header__menu-hamburger-botao, 
+.header__menu-usuario-botao,
 .header__direita {
     display: none;
 }
@@ -212,4 +211,14 @@ body{
     .secao-conta, .header__menu__botoes{
         display: block;
     }
+}
+
+/* Animations */
+@keyframes anim-go-dowm {
+    from { top: -100px;}
+    to { top: var(--header-altura);}
+}
+@keyframes anim-hide-to-up {
+    from { top: var(--header-altura); display: block;}
+    to { top: -200%;}
 }
