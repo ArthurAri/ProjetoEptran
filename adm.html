@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPTRAN</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/paginas/categorias.css">
+    <link rel="stylesheet" href="styles/paginas/adm.css">
+    <title>EPTRAN - ADM</title>
 </head>
 <body>
     <header class="fixador">
@@ -16,10 +16,11 @@
                     <div class="icone header__icone-menu"></div>
                 </label>
                 <div class="header__menu-hamburger">
-                    <a href="login.html" class="header__menu-hamburger__item">Autenticação</a>
-                    <a href="categorias.html" class="header__menu-hamburger__item">Categorias</a>
-                    <a href="contato.html" class="header__menu-hamburger__item">Contato</a>
+                    <a href="eptran.html" class="header__menu-hamburger__item">Pagina Principal</a>
+                    <a href="login.html" class="header__menu-hamburger__item">Perfil</a>
+                    <a href="categorias.html" class="header__menu-hamburger__item">Jogos</a>
                     <a href="categorias.html" class="header__menu-hamburger__item">Cursos</a>
+                    <a href="adm.html" class="header__menu-hamburger__item">Administração</a>
                 </div>
             </div>
             <a href="eptran.html" class="header__logo">
@@ -29,16 +30,16 @@
                 <div>
                     <div class="header__menu__botoes">
                         <a href="categorias.html" class="header__botao">
-                            <!-- <div class="icone botao-logout__icone"></div> -->
                             <h2>Jogos</h2>
                         </a>
                         <a href="login.html" class="header__botao">
-                            <!-- <div class="icone botao-logout__icone"></div> -->
                             <h2>Perfil</h2>
                         </a>
                         <a href="categorias.html" class="header__botao">
-                            <!-- <div class="icone botao-logout__icone"></div> -->
                             <h2>Cursos</h2>
+                        </a>
+                        <a href="adm.html" class="header__botao">
+                            <h2>Administração</h2>
                         </a>
                     </div>
                 </div>
@@ -63,14 +64,31 @@
             </div>
         </div>
     </header>
+
     <main class="corpo">
-        <section class="categorias">
-            <h2>Escolha a sua categoria</h2>
-            <div class="categorias__botoes">
-                <a class="categorias__botoes__botao" id="infantil">     <h2>Ensino Fundamental I      </h2></a>
-                <a href="Jogos/jogo_da_memoria/jogo_da_memoria.html" class="categorias__botoes__botao" id="fundamental">  <h2>Ensino Fundamental II     </h2></a>
-                <a href="Jogos/ensino_medio0/Jogo_ensino_medio.html" class="categorias__botoes__botao" id="medio">        <h2>Ensino Médio           </h2></a>
-            </div>
+        <h1>Página de Administração</h1>
+
+        <div class="selecao">
+            <label for="seletor1" class="selecao__seletor">A</label>
+            <label for="seletor2" class="selecao__seletor">B</label>
+            <label for="seletor3" class="selecao__seletor">C</label>
+            <label for="seletor4" class="selecao__seletor">D</label>
+        </div>
+        <input id="seletor1" type="radio" name="seletores" checked="true">
+        <div class="subpagina">
+            Texto do seletor1
+        </div>
+        <input id="seletor2" type="radio" name="seletores">
+        <div class="subpagina">
+            Texto do seletor2
+        </div>
+        <input id="seletor3" type="radio" name="seletores">
+        <div class="subpagina">
+            Texto do seletor3
+        </div>
+        <input id="seletor4" type="radio" name="seletores">
+        <div class="subpagina">
+            Texto do seletor4
         </div>
     </main>
 </body>

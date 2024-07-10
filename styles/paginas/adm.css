@@ -1,0 +1,37 @@
+h1{
+    font-size: 1em;
+}
+
+.selecao{
+    display: flex;
+}
+/* 
+input[name="seletores"]{
+    display: none;
+} */
+
+.selecao__seletor{
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    padding: 1em;
+    
+    background-color: var(--amarelo);
+}
+
+input[name="seletores"]{
+    display: none;
+}
+
+.selecao__seletor::before{
+}
+
+input[name="seletores"]:checked + div{
+    display: block;
+}
+
+.subpagina{
+    display: none;
+}

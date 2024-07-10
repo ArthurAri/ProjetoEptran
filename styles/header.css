@@ -10,13 +10,13 @@ body{
 }
 
 .fixador{
-    display: flex;
     position: sticky;
-}
-    
-.header{
-    width: 100vw;
     display: flex;
+}
+
+.header{
+    display: flex;
+    width: 100vw;
     justify-content: space-between;
     background: var(--azul);
     color: var(--branco);
@@ -64,6 +64,7 @@ body{
 }
 
 .header__menu-hamburger__item{
+    z-index: -1;
     text-decoration: none;
     display: block;
     color: var(--branco-texto);

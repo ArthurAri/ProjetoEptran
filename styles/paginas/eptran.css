@@ -12,12 +12,6 @@
     color: var(--branco-texto);
 }
 
-.painel-bem-vindo h1,
-.painel-bem-vindo h2{
-    position: relative;
-    z-index: 0;
-}
-
 .painel-bem-vindo h1{
     font-weight: 700;
     font-size: 3rem;
