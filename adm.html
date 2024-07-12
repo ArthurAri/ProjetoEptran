@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles/paginas/adm.css">
     <title>EPTRAN - ADM</title>
 </head>
+
 <body>
     <header class="fixador">
         <div class="header">
@@ -68,28 +70,30 @@
     <main class="corpo">
         <h1>Página de Administração</h1>
 
-        <div class="selecao">
-            <label for="seletor1" class="selecao__seletor">A</label>
-            <label for="seletor2" class="selecao__seletor">B</label>
-            <label for="seletor3" class="selecao__seletor">C</label>
-            <label for="seletor4" class="selecao__seletor">D</label>
-        </div>
         <input id="seletor1" type="radio" name="seletores" checked="true">
-        <div class="subpagina">
-            Texto do seletor1
-        </div>
+        <label for="seletor1" class="selecao__seletor">A</label>
         <input id="seletor2" type="radio" name="seletores">
-        <div class="subpagina">
-            Texto do seletor2
-        </div>
+        <label for="seletor2" class="selecao__seletor">B</label>
         <input id="seletor3" type="radio" name="seletores">
-        <div class="subpagina">
-            Texto do seletor3
-        </div>
+        <label for="seletor3" class="selecao__seletor">C</label>
         <input id="seletor4" type="radio" name="seletores">
-        <div class="subpagina">
-            Texto do seletor4
-        </div>
+        <label for="seletor4" class="selecao__seletor">D</label>
+        <section class="conteudo">
+            <div class="subpagina" id="conteudo1">
+                Texto do seletor1
+            </div>
+            <div class="subpagina" id="conteudo2">
+                Texto do seletor2
+            </div>
+            <div class="subpagina" id="conteudo3">
+                Texto do seletor3
+            </div>
+            <div class="subpagina" id="conteudo4">
+                Texto do seletor4
+            </div>
+        </section>
     </main>
+
 </body>
+
 </html>

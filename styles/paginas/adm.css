@@ -4,6 +4,7 @@ h1{
 
 .selecao{
     display: flex;
+    width: 100%;
 }
 /* 
 input[name="seletores"]{
@@ -11,8 +12,8 @@ input[name="seletores"]{
 } */
 
 .selecao__seletor{
-    display: block;
-    width: 100%;
+    grid-area: "seletor";
+    position: relative;
     display: flex;
     align-items: center;
 
@@ -25,13 +26,14 @@ input[name="seletores"]{
     display: none;
 }
 
-.selecao__seletor::before{
-}
-
-input[name="seletores"]:checked + div{
-    display: block;
-}
-
 .subpagina{
     display: none;
+    width: 100%;
+}
+
+#seletor1:checked ~ section #conteudo1,
+#seletor2:checked ~ section #conteudo2,
+#seletor3:checked ~ section #conteudo3,
+#seletor4:checked ~ section #conteudo4{
+    display: block;
 }
