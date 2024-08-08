@@ -10,13 +10,14 @@ const cartas_arquivos = {
     'Semáforo'                  : 'cartas/semaforo.svg',
     'Sinal verde'               : 'cartas/sinal_verde.svg',
     'Sinal vermelho'            : 'cartas/sinal_vermelho.svg',    
-    'Trilho de trem'            : 'cartas/trilho_de_trem.svg'
+    'Passagem de nível'         : 'cartas/trilho_de_trem.svg'
 }
 
 var cartas_objetos = new Array();
 var pontos = 0;
 var iniciado = false;
 
+//Cria todas as cartas no DOM
 Object.keys(cartas_arquivos).forEach(key => {
     //Para as cartas com Imagems
     var div = document.createElement("div");
@@ -39,10 +40,9 @@ Object.keys(cartas_arquivos).forEach(key => {
     
     cartas_objetos.push(div);
     cartas_objetos.push(div2);
-
-    console.log(key, cartas_arquivos[key]);
 });
 
+//Adciona a função embaralhar para todos os arrays
 Array.prototype.shuffle = function() {
     let indice = this.length;
     
@@ -55,6 +55,7 @@ Array.prototype.shuffle = function() {
     return this;
 }
 
+//Quando apertar o botão reiniciar:
 document.getElementById("reiniciar").addEventListener('click', () => embaralhar());
 function embaralhar() {
     iniciado = false;
@@ -69,6 +70,7 @@ function embaralhar() {
     atualizar();
 };
 
+//Atualiza o container
 function atualizar() {
     cartas_objetos.forEach(element => {
         cartas_container.append(element);
@@ -88,19 +90,21 @@ function girarCarta(element){
     if (selecionado.length > 1 || !iniciado)
         return;
 
-    qtd_selecionado++;
     var carta_exibida = !(element.children[0].style.display == 'none');
     console.log(carta_exibida);
 
-    selecionado.push(element)
-
-    if (carta_exibida)
+    if (carta_exibida){
+        if (!selecionado.includes(element))
+            return;
         ocultarCarta(element);
-    else
+        selecionado = new Array();
+    }
+    else{
         mostrarCarta(element);
+        selecionado.push(element);
+    }
 
-    if (qtd_selecionado > 1)
-        compararSelecionado();
+    compararSelecionado();
 }
 
 function ocultarCarta(element){
@@ -117,26 +121,27 @@ function mostrarCarta(element){
     element.children[0].style.display = 'block';
 }
 
-var qtd_selecionado = 0;
 var selecionado = new Array();
 
 function compararSelecionado(){
-    console.log("Comparando");
-    console.log(selecionado);
     var igual = selecionado[0].classList[1] == selecionado[1].classList[1];
 
     if (igual){
-        pontos++;
+        pontos += 2;
         selecionado =  new Array();
+        if (pontos >= cartas_objetos.length)
+            vitoria();
     }
     else{
         setTimeout(restaurarSelecao, 1000);
     }
-
-    qtd_selecionado = 0;
 }
 
 function restaurarSelecao(){
     selecionado.forEach(element => ocultarCarta(element));
     selecionado = new Array();
+}
+
+function vitoria(){
+    // Fim
 }
